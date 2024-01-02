@@ -126,57 +126,54 @@
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Hubungi Kami</h2>
         </div>
-        
-        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-            <div class="row align-items-stretch mb-5">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <!-- Nama -->
-                        <input class="form-control" id="nama" type="text" placeholder="Masukan nama *" data-sb-validations="required" />
-                        <div class="invalid-feedback" data-sb-feedback="nama:required">A nama is required.</div>
-                    </div>
-                    <div class="form-group">
-                        <!-- Nomer telp -->
-                        <input class="form-control" id="telp" type="telp" placeholder="Masukan Nomor telp *" data-sb-validations="required,telp" />
-                        <div class="invalid-feedback" data-sb-feedback="telp:required">An telp is required.</div>
-                        <div class="invalid-feedback" data-sb-feedback="telp:telp">telp is not valid.</div>
-                    </div>
-                    <div class="form-group mb-md-0">
-                        <!-- Jenis Dan Produk-->
-                        <input class="form-control" id="jenis produk" type="tel" placeholder="Masukan jenis produk dan size *" data-sb-validations="required" />
-                        <div class="invalid-feedback" data-sb-feedback="jenis produk:required">A jenis produk number is required.</div>
-                    </div>
+    </div>
+
+    <div class="row" style="display: flex; flex-wrap: wrap">
+        <div class="map-container" style="flex: 1; margin-right: 20px; margin-left: 60px; max-width: 50%; height: 360px; margin-top: 30px">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7600685223583!2d108.24885197364154!3d-6.42486516282778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ec9364a0eb68b%3A0x37447fc068f8206d!2sUD%20Berkah%20Slamet%20Mandiri%20Lelea!5e0!3m2!1sid!2sid!4v1703933159204!5m2!1sid!2sid" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="width: 100%; height: 100%; border: 0;"></iframe>
+        </div>
+        <div class="form-container" style="flex: 1; max-width: 50%; margin-right: 50px; margin-top: 30px">
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="form-group">
+                    <!-- Nama -->
+                    <input class="form-control" id="nama" type="text" placeholder="Masukan nama *" data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="nama:required">A nama is required.</div>
                 </div>
-                <div class="col-md-6">
-                    <div class="form-group form-group-textarea mb-md-0">
-                        <!-- Masukan pesan -->
-                        <textarea class="form-control" id="pesan" placeholder="Masukan pesan *" data-sb-validations="required"></textarea>
-                        <div class="invalid-feedback" data-sb-feedback="pesan:required">A pesan is required.</div>
-                    </div>
+                <div class="form-group">
+                    <!-- Nomer telp -->
+                    <input class="form-control" id="telp" type="tel" placeholder="Masukan Nomor telp *" data-sb-validations="required,tel" />
+                    <div class="invalid-feedback" data-sb-feedback="telp:required">A phone number is required.</div>
+                    <div class="invalid-feedback" data-sb-feedback="telp:tel">Invalid phone number.</div>
                 </div>
-            </div>
-            <!-- Submit success pesan-->
-            <!---->
-            <!-- This is what your users will see when the form-->
-            <!-- has successfully submitted-->
-            <div class="d-none" id="submitSuccesspesan">
-                <div class="text-center text-white mb-3">
-                    <div class="fw-bolder">Form submission successful!</div>
-                    To activate this form, sign up at
-                    <br />
-                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                <div class="form-group">
+                    <!-- Jenis Dan Produk-->
+                    <input class="form-control" id="jenis_produk" type="text" placeholder="Masukan jenis produk dan size *" data-sb-validations="required" />
+                    <div class="invalid-feedback" data-sb-feedback="jenis_produk:required">Jenis produk and size are required.</div>
                 </div>
-            </div>
-            <!-- Submit error pesan-->
-            <!---->
-            <!-- This is what your users will see when there is-->
-            <!-- an error submitting the form-->
-            <div class="d-none" id="submitErrorpesan"><div class="text-center text-danger mb-3">Error sending pesan!</div></div>
-            <!-- Submit Button-->
-            <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send pesan</button></div>
-        </form>
+                <div class="form-group">
+                    <textarea class="form-control" id="pesan" placeholder="Masukan pesan *" data-sb-validations="required"></textarea>
+                    <div class="invalid-feedback" data-sb-feedback="pesan:required">A message is required.</div>
+                </div>
+                <!-- Add submit button or other form elements as needed -->
+            </form>
+        </div>
     </div>
 </section>
+
+<footer style="background-color: #ff8a00; text-align: center; padding: 20px;">
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <p style="color: white; margin: 0 10px;">Follow Us:</p>
+        <a href="https://wa.me/6281292485052" style="color: white; text-decoration: none; margin: 5px;">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.facebook.com/supplierikansegarindramayu?mibextid=YimQGvt8cm5a3TS7" target="_blank" style="color: white; text-decoration: none; margin: 5px;">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://www.tiktok.com/@supplierikanindramayu?_t=8icD8MxkxTF&_r=1" target="_blank" style="color: white; text-decoration: none; margin: 5px;">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>
+</footer>
 
         
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">

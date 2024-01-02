@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Berkah Slamet Mandiri') }}</title>
 
     <!-- Fonts -->
     <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
@@ -20,8 +20,13 @@
     <!-- Favicon -->
     <link href="{{ asset('img/favicon.png') }}" rel="icon" type="image/png">
     
+    <style>
+        .bg-gradient-orange {
+            background-color: #ff9800;
+        }
+    </style>
 </head>
-<body class="bg-gradient-primary min-vh-100 d-flex justify-content-center align-items-center">
+<body class="bg-gradient-orange min-vh-100 d-flex justify-content-center align-items-center">
 
 @yield('main-content')
 
